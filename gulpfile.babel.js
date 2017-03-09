@@ -67,7 +67,7 @@
             compact: false
         }));
 
-        if (path.basename(options.entries) === 'app.js') {
+        if (path.basename(options.entries) === 'App.js') {
             min = false;
             b.require(internals.deps)
         } else {
@@ -118,7 +118,7 @@
     //== Gulp JS task
     gulp.task('scripts', (callback) => {
 
-        const mainFiles = [`${internals.src}/js/app.js`];
+        const mainFiles = [`${internals.src}/js/App.js`];
         glob(`${internals.src}/js/*.js`, (err, files) => {
 
             if (err) {

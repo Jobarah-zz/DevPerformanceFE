@@ -1,3 +1,13 @@
-body {
-  background-color: #e8e8e8;
-}
+/*******************************************
+MASTER SCSS
+Author: Luis Booth - lbooth@sanservices.hn
+********************************************/
+
+	// React Components
+
+	@import './components/NavBar';
+	@import './components/Footer';
+
+	body {
+		margin: 0;
+	}
