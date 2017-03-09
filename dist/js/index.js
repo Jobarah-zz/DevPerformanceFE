@@ -21921,6 +21921,10 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _NavBar = require('./NavBar');
+
+var _NavBar2 = _interopRequireDefault(_NavBar);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function (_Component) {
@@ -21936,8 +21940,8 @@ var App = function (_Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				null,
-				'Something'
+				{ className: 'navbar-wrap' },
+				_react2.default.createElement(_NavBar2.default, null)
 			);
 		}
 	}]);
@@ -21946,7 +21950,103 @@ var App = function (_Component) {
 
 exports.default = App;
 
-},{"babel-runtime/core-js/object/get-prototype-of":3,"babel-runtime/helpers/classCallCheck":7,"babel-runtime/helpers/createClass":8,"babel-runtime/helpers/inherits":9,"babel-runtime/helpers/possibleConstructorReturn":10,"react":263,"react-dom":112}]},{},[264])
+},{"./NavBar":265,"babel-runtime/core-js/object/get-prototype-of":3,"babel-runtime/helpers/classCallCheck":7,"babel-runtime/helpers/createClass":8,"babel-runtime/helpers/inherits":9,"babel-runtime/helpers/possibleConstructorReturn":10,"react":263,"react-dom":112}],265:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = require('babel-runtime/helpers/createClass');
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = require('babel-runtime/helpers/inherits');
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = require('react-dom');
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var NavBar = function (_Component) {
+	(0, _inherits3.default)(NavBar, _Component);
+
+	function NavBar() {
+		(0, _classCallCheck3.default)(this, NavBar);
+		return (0, _possibleConstructorReturn3.default)(this, (NavBar.__proto__ || (0, _getPrototypeOf2.default)(NavBar)).apply(this, arguments));
+	}
+
+	(0, _createClass3.default)(NavBar, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'navbar' },
+				_react2.default.createElement(
+					'span',
+					{ className: 'icon-wrapper' },
+					_react2.default.createElement('img', { src: '/src/img/DPA-icon.png' })
+				),
+				_react2.default.createElement(
+					'header',
+					null,
+					'DPA',
+					_react2.default.createElement(
+						'span',
+						null,
+						'Tool'
+					)
+				),
+				_react2.default.createElement('button', null)
+			);
+		}
+	}]);
+	return NavBar;
+}(_react.Component);
+
+exports.default = NavBar;
+
+},{"babel-runtime/core-js/object/get-prototype-of":3,"babel-runtime/helpers/classCallCheck":7,"babel-runtime/helpers/createClass":8,"babel-runtime/helpers/inherits":9,"babel-runtime/helpers/possibleConstructorReturn":10,"react":263,"react-dom":112}],266:[function(require,module,exports){
+'use strict';
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = require('react-dom');
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _App = require('./components/App');
+
+var _App2 = _interopRequireDefault(_App);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import './index.css';
+
+_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
+
+},{"./components/App":264,"react":263,"react-dom":112}]},{},[266])
 
 
-//# sourceMappingURL=maps/App.js.map
+//# sourceMappingURL=maps/index.js.map

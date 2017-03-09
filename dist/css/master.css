@@ -1,2 +1,2 @@
-body{background-color:#e8e8e8}
+.navbar-wrap .navbar{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;font-family:Futura,Trebuchet MS,Arial,sans-serif;color:#fff;width:100%;height:4rem;background:#333}.navbar-wrap .navbar .icon-wrapper{text-align:center}.navbar-wrap .navbar .icon-wrapper img{width:75%;vertical-align:center}.navbar-wrap .navbar header{width:4.5rem;font-size:1.7rem;font-weight:700;line-height:1;text-align:center}.navbar-wrap .navbar header span{display:block;font-size:1.6rem;font-weight:lighter}.navbar-wrap .navbar button{float:right}.footer-wrap{background:#000}body{margin:0}
 /*# sourceMappingURL=maps/master.css.map */
