@@ -6,8 +6,11 @@ Author: Luis Booth - lbooth@sanservices.hn
 	// React Components
 
 	@import './components/NavBar';
-	@import './components/Footer';
 
 	body {
 		margin: 0;
+	}
+	
+	a {
+		text-decoration: none;
 	}

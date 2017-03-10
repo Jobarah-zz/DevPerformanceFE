@@ -21992,12 +21992,28 @@ var NavBar = function (_Component) {
 
 	function NavBar() {
 		(0, _classCallCheck3.default)(this, NavBar);
-		return (0, _possibleConstructorReturn3.default)(this, (NavBar.__proto__ || (0, _getPrototypeOf2.default)(NavBar)).apply(this, arguments));
+
+		var _this = (0, _possibleConstructorReturn3.default)(this, (NavBar.__proto__ || (0, _getPrototypeOf2.default)(NavBar)).call(this));
+
+		_this.toggle = _this.toggle.bind(_this);
+		_this.state = { toggle: 'uncollapsed' };
+		return _this;
 	}
 
 	(0, _createClass3.default)(NavBar, [{
+		key: 'toggle',
+		value: function toggle() {
+			if (this.state.toggle == 'uncollapsed') {
+				this.setState({ toggle: 'collapsed' });
+			} else {
+				this.setState({ toggle: 'uncollapsed' });
+			}
+		}
+	}, {
 		key: 'render',
 		value: function render() {
+			var _this2 = this;
+
 			return _react2.default.createElement(
 				'div',
 				{ className: 'navbar' },
@@ -22016,7 +22032,15 @@ var NavBar = function (_Component) {
 						'Tool'
 					)
 				),
-				_react2.default.createElement('button', null)
+				_react2.default.createElement(
+					'div',
+					{ className: this.state.toggle, onClick: function onClick() {
+							return _this2.toggle();
+						} },
+					_react2.default.createElement('div', { className: 'bar1' }),
+					_react2.default.createElement('div', { className: 'bar2' }),
+					_react2.default.createElement('div', { className: 'bar3' })
+				)
 			);
 		}
 	}]);
