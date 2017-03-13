@@ -21892,7 +21892,7 @@ module.exports = require('./lib/React');
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+	value: true
 });
 
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
@@ -21919,122 +21919,45 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactDom = require('react-dom');
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
 var _NavBar = require('./NavBar');
 
 var _NavBar2 = _interopRequireDefault(_NavBar);
 
-var _Header = require('./Header');
-
-var _Header2 = _interopRequireDefault(_Header);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function (_Component) {
-    (0, _inherits3.default)(App, _Component);
+	(0, _inherits3.default)(App, _Component);
 
-    function App() {
-        (0, _classCallCheck3.default)(this, App);
-        return (0, _possibleConstructorReturn3.default)(this, (App.__proto__ || (0, _getPrototypeOf2.default)(App)).apply(this, arguments));
-    }
+	function App() {
+		(0, _classCallCheck3.default)(this, App);
+		return (0, _possibleConstructorReturn3.default)(this, (App.__proto__ || (0, _getPrototypeOf2.default)(App)).apply(this, arguments));
+	}
 
-    (0, _createClass3.default)(App, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'div',
-                    { className: 'navbar-wrap' },
-                    _react2.default.createElement(_NavBar2.default, null)
-                ),
-                _react2.default.createElement(
-                    'main',
-                    { className: 'container' },
-                    _react2.default.createElement(_Header2.default, { department: 'FRONT-END DEVELOPMENT' })
-                )
-            );
-        }
-    }]);
-    return App;
+	(0, _createClass3.default)(App, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'navbar-wrap' },
+				_react2.default.createElement(_NavBar2.default, null),
+				_react2.default.createElement(
+					'main',
+					null,
+					_react2.default.createElement(Header, null)
+				)
+			);
+		}
+	}]);
+	return App;
 }(_react.Component);
 
 exports.default = App;
 
-},{"./Header":266,"./NavBar":267,"babel-runtime/core-js/object/get-prototype-of":3,"babel-runtime/helpers/classCallCheck":7,"babel-runtime/helpers/createClass":8,"babel-runtime/helpers/inherits":9,"babel-runtime/helpers/possibleConstructorReturn":10,"react":264}],266:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _getPrototypeOf = require("babel-runtime/core-js/object/get-prototype-of");
-
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-var _classCallCheck2 = require("babel-runtime/helpers/classCallCheck");
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = require("babel-runtime/helpers/createClass");
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = require("babel-runtime/helpers/possibleConstructorReturn");
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = require("babel-runtime/helpers/inherits");
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _react = require("react");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Header = function (_Component) {
-    (0, _inherits3.default)(Header, _Component);
-
-    function Header() {
-        (0, _classCallCheck3.default)(this, Header);
-        return (0, _possibleConstructorReturn3.default)(this, (Header.__proto__ || (0, _getPrototypeOf2.default)(Header)).apply(this, arguments));
-    }
-
-    (0, _createClass3.default)(Header, [{
-        key: "render",
-        value: function render() {
-            return _react2.default.createElement(
-                "header",
-                { className: "hdr-performer" },
-                _react2.default.createElement(
-                    "h2",
-                    null,
-                    _react2.default.createElement(
-                        "small",
-                        { className: "show" },
-                        this.props.department
-                    ),
-                    "TOP PERFORMER"
-                )
-            );
-        }
-    }]);
-    return Header;
-}(_react.Component); /* =============================================
-                         HEADER COMPONENT
-                         SCSS: /sass/components/Header.scss
-                      ============================================== */
-
-
-Header.propTypes = {
-    department: _react2.default.PropTypes.string.isRequired
-};
-
-exports.default = Header;
-
-},{"babel-runtime/core-js/object/get-prototype-of":3,"babel-runtime/helpers/classCallCheck":7,"babel-runtime/helpers/createClass":8,"babel-runtime/helpers/inherits":9,"babel-runtime/helpers/possibleConstructorReturn":10,"react":264}],267:[function(require,module,exports){
+},{"./NavBar":266,"babel-runtime/core-js/object/get-prototype-of":3,"babel-runtime/helpers/classCallCheck":7,"babel-runtime/helpers/createClass":8,"babel-runtime/helpers/inherits":9,"babel-runtime/helpers/possibleConstructorReturn":10,"react":264,"react-dom":111}],266:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22133,28 +22056,7 @@ var NavBar = function (_Component) {
 
 exports.default = NavBar;
 
-},{"babel-runtime/core-js/object/get-prototype-of":3,"babel-runtime/helpers/classCallCheck":7,"babel-runtime/helpers/createClass":8,"babel-runtime/helpers/inherits":9,"babel-runtime/helpers/possibleConstructorReturn":10,"react":264,"react-dom":111}],268:[function(require,module,exports){
-'use strict';
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = require('react-dom');
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _App = require('./components/App');
-
-var _App2 = _interopRequireDefault(_App);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// import './index.css';
-
-_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
-
-},{"./components/App":265,"react":264,"react-dom":111}]},{},[268])
+},{"babel-runtime/core-js/object/get-prototype-of":3,"babel-runtime/helpers/classCallCheck":7,"babel-runtime/helpers/createClass":8,"babel-runtime/helpers/inherits":9,"babel-runtime/helpers/possibleConstructorReturn":10,"react":264,"react-dom":111}]},{},[265])
 
 
-//# sourceMappingURL=maps/index.js.map
+//# sourceMappingURL=maps/App.js.map
