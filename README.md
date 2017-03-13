@@ -22,7 +22,7 @@ $ gulp
 * The server will be running in the port 3000: 
 <a href="http://localhost:3000/">http://localhost:3000/</a>
 
-## Projects Structure:
+## Project's Structure:
 
 ```
 SASS
