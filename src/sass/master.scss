@@ -1,16 +1,15 @@
 /*******************************************
 MASTER SCSS
-Author: Luis Booth - lbooth@sanservices.hn
+Authors: Luis Booth  - lbooth@sanservices.hn
+		 David Nuñez - dnunez@sanservices.hn
 ********************************************/
+
+	// Includes
+	@import './includes/variables';
+	@import './includes/utilities';
+	@import './includes/base';
 
 	// React Components
 
 	@import './components/NavBar';
-
-	body {
-		margin: 0;
-	}
-	
-	a {
-		text-decoration: none;
-	}
+	@import './components/Header';

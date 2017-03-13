@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import NavBar from './NavBar';
+import Header from './Header';
 
 class App extends Component {
-	render() {
-		return(
-      <div className='navbar-wrap'>
-				<NavBar></NavBar>
-			</div>
-		)
-	}
+    render() {
+        return(
+            <div>
+                <div className="navbar-wrap">
+                    <NavBar />
+                </div>
+                <main className="container">
+                    <Header department="FRONT-END DEVELOPMENT" />
+                </main>
+            </div>
+        );
+    }
 }
 
 export default App;
