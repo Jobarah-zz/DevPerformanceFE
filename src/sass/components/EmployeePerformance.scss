@@ -1,0 +1,58 @@
+.rct-employee {
+	$height: 140px;
+	$width: $height * 0.8785714285714286;
+
+	display: block;
+
+	h3 {
+		font: 36px $font-futura;
+
+		strong {
+			font-size: 24px;
+		}
+	}
+
+	// .employee {
+	// 	position: relative;
+	// 	display: block;
+	// 	margin: 0 auto;
+	// }
+
+	.img-polygon {
+	  clip-path: polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+	} 
+
+
+	.background {
+		width: $width * 1.21;
+		height: $height * 1.21;
+		background: linear-gradient(to bottom, rgba(75,173,249,1) 0%,rgba(45,129,193,1) 100%);
+	}
+
+	.img-cover {
+		object-fit: cover;
+		width: $width;
+		height: $height;
+	}
+
+	.img-center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+
+	.va-middle {
+		vertical-align: middle;
+	}
+
+	.employee-caption {
+		margin-left: 54px;
+	}
+
+	.medal {
+		top: 60%;
+		left: 79%;
+	}
+}
