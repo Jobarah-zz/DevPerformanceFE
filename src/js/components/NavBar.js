@@ -10,9 +10,8 @@ class NavBar extends Component {
 	}
 
 	toggle() {
-		if(this.state.toggle == 'uncollapsed')
-		{
-			this.setState({ toggle: 'collapsed'});
+		if(this.state.toggle == 'uncollapsed') {
+			this.setState({ toggle: 'collapsed' });
 		}
 		else {
 			this.setState({ toggle: 'uncollapsed' });
